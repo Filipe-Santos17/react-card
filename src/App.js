@@ -1,11 +1,7 @@
-import Card from "./components/card/card"
+import Main from "./components/"
 
 function App() {
-  return (
-    <div>
-      <Card/>
-    </div>
-  )
+  return <Main/>
 }
 
 export default App
