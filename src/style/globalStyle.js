@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const Global = createGlobalStyle`
     *{
@@ -14,4 +14,10 @@ export const Global = createGlobalStyle`
         /*font-family: ;*/
         font-size: 10px;
     }
+`;
+
+export const Main = styled.main`
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
 `;

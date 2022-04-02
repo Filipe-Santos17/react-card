@@ -1,9 +1,20 @@
-export default function input({ typeInp, ID, Min, Max, TextLabel }) {
+import {BsFillPersonFill} from "react-icons/bs"
+import {P, Input} from "./input.element"
+
+export default function input({ typeInp, ID, Min, Max, valor,Handle}) {
   return (
-    <>
-      <input type={typeInp} name={ID} id={ID} minLength={Min} maxLength={Max} />
-      <label htmlFor={ID}>{TextLabel}</label>
-    </>
+    <P>
+      <BsFillPersonFill/>
+      <Input 
+        type={typeInp} 
+        name={ID} 
+        id={ID} 
+        minLength={Min} 
+        maxLength={Max} 
+        value={valor}
+        onChange={Handle}
+      />
+    </P>
   );
 }
 
