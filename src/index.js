@@ -10,3 +10,8 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+/*
+https://www.youtube.com/watch?v=jCDBHiYhTxU&ab_channel=CodeBR
+e cartão da igti
+*/
