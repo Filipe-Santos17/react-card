@@ -1,10 +1,9 @@
-import {BsFillPersonFill} from "react-icons/bs"
 import {P, Input} from "./input.element"
 
-export default function input({ typeInp, ID, Min, Max, valor,Handle}) {
+export default function input({ typeInp, ID, Min, Max, valor,Handle, icon}) {
   return (
     <P>
-      <BsFillPersonFill/>
+      {icon}
       <Input 
         type={typeInp} 
         name={ID} 

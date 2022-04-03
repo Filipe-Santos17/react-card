@@ -52,6 +52,7 @@ export const ContentInfo = styled.div`
 
     h4.nome{
         font-size: 1rem; 
+        text-transform: uppercase;
     }
 
     p {

@@ -13,4 +13,5 @@ export const Input = styled.input`
 
 export const P = styled.p`
     background-color: rgba(220,220,220, .5);
+    margin-bottom: .7rem;
 `;
