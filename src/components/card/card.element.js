@@ -1,7 +1,12 @@
 import styled from 'styled-components';
+import fontHalter from "./halter-webfont.woff"
 
 export const SectionCard = styled.section`
     margin: auto;
+    @font-face {
+        font-family: 'Halter, sans-serif';
+        src: url(${fontHalter}) format('woff');
+    }
     width: 21.5rem;
     height: 12.9rem;
     background-color: #3399cc;
@@ -39,8 +44,8 @@ export const TopIcons = styled.div`
 `;  
 
 export const NumCard = styled.h2`
-    margin-top: 1rem;
-    font-size: 2rem;
+    margin-top: 2rem;
+    font-size: 1.7rem;
     text-align: left;
 `;
 
@@ -48,7 +53,7 @@ export const ContentInfo = styled.div`
     display: flex;
     justify-content: space-between;
     bottom: 0;
-    margin-top: 4rem;
+    margin-top: 3.7rem;
 
     h4.nome{
         font-size: 1rem; 

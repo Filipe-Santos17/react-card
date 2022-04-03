@@ -11,7 +11,7 @@ export const Global = createGlobalStyle`
 
     body{
         scroll-behavior: smooth;
-        /*font-family: ;*/
+        font-family: 'Roboto', sans-serif;
         font-size: 10px;
     }
 `;

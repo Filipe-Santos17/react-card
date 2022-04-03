@@ -10,12 +10,24 @@ export const InputSection = styled.section`
     width: 50%;
     height: 100vh;
     background-color: #ECF0F1;
+
+    footer p {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 10rem;
+
+        span{
+            color: #58AF9B;
+        }
+    }
 `;
 
 export const CardSection = styled.section`
     width: 50%;
     height: 100vh;
-    background-color: #58Af9B;
+    background-color: #58AF9B;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 10rem 11rem;
 `;
