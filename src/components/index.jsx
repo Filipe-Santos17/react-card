@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BsFillPersonFill, BsFillCreditCard2FrontFill, BsFillCreditCardFill } from "react-icons/bs";
+import { BsFillPersonFill, BsFillCreditCard2FrontFill, BsFillCreditCardFill, BsFillCalendarMonthFill } from "react-icons/bs";
 import { Global } from "../style/globalStyle";
 import { Main, InputSection, CardSection } from "./main.element";
 import Title from "./title/title"
@@ -33,6 +33,13 @@ export default function MAIN() {
     setSecretKey(newSecretKey);
   }
 
+  function NumberKey({currentTarget}){
+    let numb = currentTarget.value
+    if(numb.length === 4){//8 & 12
+      numb += " "
+    }
+  }
+
   return (
     <Main>
       <Global />
@@ -59,25 +66,27 @@ export default function MAIN() {
           place="Numero do Cartão"
           value={number}
           Handle={HandleNumberChange}
+          KDown={NumberKey}
         />
 
         <Input
-          icon={<BsFillCreditCardFill/>}
+          icon={<BsFillCalendarMonthFill/>}
           ID="DataCard"
           typeInp="text"
-          Min={4}
-          Max={4}
+          Min={5}
+          Max={5}
           place="Validade"
           value={data}
           Handle={HandleDataChange}
+          KDown=""
         />
 
         <Input
           icon={<BsFillCreditCardFill/>}
           ID="KeyCard"
           typeInp="text"
-          Min={4}
-          Max={4}
+          Min={3}
+          Max={3}
           place="CVV"
           value={secretKey}
           Handle={HandleSecretKeyChange}
@@ -91,7 +100,7 @@ export default function MAIN() {
         <Card
           numberCard={number}
           nameCard={name}
-          secretKeycard={secretKey}
+          shelfLife={data}
           logo=""
           typeCard=""
         />

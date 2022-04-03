@@ -1,7 +1,9 @@
 import { SectionCard, TopIcons, NumCard, ContentInfo} from "./card.element"
 import { FcSimCardChip } from "react-icons/fc";
 
-export default function card({ numberCard, nameCard, secretKeycard, logo,typeCard}) {
+//secretKeycard 
+
+export default function card({ numberCard, nameCard, shelfLife, logo,typeCard}) {
   return (
     <SectionCard>
       <div className="Content">
@@ -12,7 +14,7 @@ export default function card({ numberCard, nameCard, secretKeycard, logo,typeCar
         <NumCard>{numberCard}</NumCard>
         <ContentInfo>
           <h4 className="nome">{nameCard}</h4>
-          <p>{secretKeycard}</p>
+          <p>{shelfLife}</p>
         </ContentInfo>
       </div>
     </SectionCard>

@@ -14,7 +14,7 @@ export const InputSection = styled.section`
     footer p {
         text-align: center;
         font-size: 1.2rem;
-        margin-top: 10rem;
+        margin-top: 7rem;
 
         span{
             color: #58AF9B;
@@ -29,5 +29,5 @@ export const CardSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10rem 11rem;
+    padding: 9rem 11rem 0;
 `;
